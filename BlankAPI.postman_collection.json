@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "812838ce-7113-4f33-b107-935879ba42c2",
+		"name": "BlankAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Chamada de teste",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyJhZG1pbiIsImFkbWluIl0sImp0aSI6IjVkZDg5YjFkMzRlMzRhZTk5NWRmYzU3YTc5YWY3NGViIiwibmJmIjoxNTg1NDk4MjA2LCJleHAiOjE1ODU0OTgzMjYsImlhdCI6MTU4NTQ5ODIwNiwiaXNzIjoiRXhlbXBsb0lzc3VlciIsImF1ZCI6IkV4ZW1wbG9BdWRpZW5jZSJ9.b4GXyIRVu-Sj23oOQ_C3RcBQyXGFBzQ2N80v0SCZZvqq-eMj4lxjdB6_YBG955bd_wLu3Y2d2nVIadT5y5WtOes4Rx6mrjhPj6i94-klI2mxCRWtws63X9UN2bTajDHc64mFALxE5tLB2TSKxoNY6DWnjQeTES2sGgl9PdtFAQ4oS5dZGjLXzX_pJ0OupqYp2mxi8ecyxA2tVkrp4G5dVrlTwbO-ja35EI1XFesJYCpd12vNybZxrLL55pX6uV6R3zQzL_8S0ss-4F5djTAjvzMeSrzfDZz2XZSHk7eFTegUA2MG7KDcwZL0znkBpzF4aAKD24fN9GlqaxAmT-Eibg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/weatherforecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userid\" : \"admin\",\n\t\"password\" : \"Abc_12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
